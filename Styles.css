@@ -1,0 +1,374 @@
+    /*-------------------------------------------- Index.html ------------------------------------------------*/
+
+/*html, overall+Parallax*/
+html {
+  scroll-behavior: smooth;
+}
+
+.parallax { 
+
+    background-image: url("img/img_rckply.jpg");
+    height: 1000px; 
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 { 
+
+    background-image: url("img/p2.jpg");
+    height: 1000px; 
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 { 
+
+    background-image: url("img/p3.jpg");
+    height: 1000px; 
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax4 { 
+
+    background-image: url("img/p4.jpg");
+    height: 1000px; 
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax5 { 
+
+    background-image: url("img/p5.jpg");
+    height: 1000px; 
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax6 { 
+
+    background-image: url("img/p6.jpg");
+    height: 1000px; 
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*fonts*/
+@font-face {
+    font-family: logo;
+    src: url(font/logo.otf);
+}
+
+@font-face {
+    font-family: nav;
+    src: url(font/nav.otf);
+}
+
+@font-face {
+    font-family: text;
+    src: url(font/text.otf);
+}
+
+@font-face {
+    font-family: h2;
+    src: url(font/h2.otf);
+}
+
+
+/*achtergrond*/
+body {
+    background-color: black;
+}
+
+/*navbar > Nogmaals bedankt @Jens.codes voor uitleg*/
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  margin: 0px;
+  font-family: 'nav';
+
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  position:fixed;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+    font-family: logo;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+.nav > .nav-links > a:hover {
+  color: darkgrey;
+    transition-duration: 0.2s;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: black;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked + .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+/*boxes news*/
+
+div.resp {
+    margin: 5px;
+    border: 1px solid darkgray;
+    float: left;
+    width: 300;
+}
+
+div.resp:hover {
+    border: 1px solid #777;
+}
+
+div.resp img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: h2;
+}
+
+.desc2 {
+    padding: 15px;
+    text-align: center;
+    font-family: text;
+    text-decoration:none;
+    color:white;
+
+}
+
+/*footer*/
+
+footer {
+    text-align: left;
+    color: white;
+}
+
+footer h2 {
+    font-family: logo;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer p {
+    text-align: right;
+    font-family: nav;
+}
+
+/*-------------------------------------------- about.html ------------------------------------------------*/
+/*text*/
+.one {
+    font-family: logo;
+    text-align: center;
+    font-size:100px;
+}
+
+.two {
+    font-family: text;
+    text-align: left;
+    margin: 0.5%;
+    font-size:30px;
+}
+
+.two span {
+font-style: italic;
+}
+
+.two a {
+    text-decoration: none;
+    color: white;
+}
+
+.three {
+    font-family: nav;
+    text-align: center;
+    margin: 0.5%;
+    font-size:60px;
+    text-transform: uppercase;
+}
+
+
+/*-------------------------------------------- events.html ------------------------------------------------*/
+
+/*txt*/
+h5 {
+    font-family: h2;
+}
+
+h5 a {
+    color:white;
+}
+
+h6 {
+    font-size: 60px
+}
+
+/*-------------------------------------------- instruments.html ------------------------------------------------*/
+
+
+table tr th a {
+    text-decoration: none;
+    color:white;
+    font-size: 20px
+}
+
+.partop {
+    color: white;
+    font-family: logo;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: h2; 
+}
+
+h3 {
+    font-family: text;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    font-family: text;
+    font-size: 15px
+}
+
+.imgdesc {
+    text-align: center;
+    font-family: text;
+    font-size: 25px;
+}
+
+/*microfoons*/
+
+.link {
+    text-align: center;
+    font-size: 70px;
+    font-family: h2;
+    text-decoration: none;
+}
+
+/*-------------------------------------------- shop.html ------------------------------------------------*/
+/*niets extras*/
+
+
+/*contact*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+    font-family: text;
+}
+
+input[type=submit] {
+  background-color: darkslategray;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+    font-family: text;
+}
